@@ -1,0 +1,54 @@
+{% extends "./base.html" %}
+{% block content %}
+{% load static %}
+<body>
+	<div class="text-center" style="margin-bottom: 100px" id="section1">
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="rounded img-fluid img-thumbnail" width="270px" height="480px" src="{% static 'img/1.jpg' %}"> </div>
+				<div class="carousel-item">
+					<img class="rounded img-fluid img-thumbnail" width="270px" height="480px" src="{% static 'img/2.jpg' %}"> </div>
+				<div class="carousel-item">
+					<img class="rounded img-fluid img-thumbnail" width="270px" height="480px" src="{% static 'img/3.jpg' %}"> </div>
+				<div class="carousel-item">
+					<img class="rounded img-fluid img-thumbnail" width="270px" height="480px" src="{% static 'img/4.jpg' %}"> </div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div> <br> <br> <br> <br> <br> <br>
+		<a href="#section2" class="btn btn-outline-light">Apasă</a>
+	</div>
+	<div id="section2" class="pt-1">
+		<p>Deci. Inițial am vrut să iți prezint asta când vom face un an de când suntem împreună. Dar am zis că acum este un moment mai potrivit, când te astepți mai puțin. Când sunt și eu lânga tine și-ți pot vedea reacția, sau nu neaparat, acum depinde de context. Înainte de toate vreau să știi că am scris totul de la mine, nu am luat nimic de pe internet. :)</p>
+		<p>Asadar am evitat să fac asta pe o foaie normala, din două motive: am un scris nu foarte frumos și aici pot să-mi eliberez mai mult imaginația (cum mi-ar placea mie, cum cred că ar arăta mai bine sau cel mai important cum ți-ar plăcea ție)</p>
+		<p>În prima parte am ales patru poze care mie mi-au atras atenția. Le-am pus ca un fel de introducere.</p>
+		<p>Acum lasând site-ul la oparte aș vrea să raspund unor lucruri din scrisorile pe care mi le-ai dat tu mie. (Pe cea de pe 24 am pus-o alături de prima și de lănțișor, pe care le port in ghiozdan după mine)</p>
+		<br>
+		<p>Întradevăr, cea mai lungă relație, și a mea și a ta, în care am invățat multe lucruri, comparativ cu ce credeam că știu. Tot în acest timp m-am atașat destul de mult de tine, chiar dacă au fost și mai sunt momente când par indiferent.</p>
+		<p>Nu aș fi vrut să scriu asta din motive pe care le știi, dar am zis că până la urmă nu am nimic de pierdut.</p>
+		<p>La începutul relației, sincer, nu mă așteptam să stăm împreună mai mult de, nu stiu, o lună, sa zic. Datorită faptului ca nu sunt o persoană deschisă si ca incă mai am retineri, de o parte din ele scapand cu ajutorul tău, practic.</p>
+		<p>Poate pentru tine nu inseamnă mult ce am facut aici, dar pentru mine inseamnă. Un pas înainte.</p>
+		<div class=" text-center"> <a href="#section3" class="btn btn-outline-light">Apasă</a> </div>
+	</div>
+	<div id="section3" style="margin-top: 500px;">
+		<div class=" text-center">
+			<p class="mb-0">Un rezumat la ceea ce am scris mai sus ar fi un sincer</p>
+			<h2 class="font-weight-bold mt-0">Te iubesc!</h2>
+			<h1>💘</h1>
+		</div>
+	</div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+</body>
+{% endblock content %}
